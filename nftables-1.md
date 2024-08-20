@@ -1,3 +1,4 @@
+```
 grep Port /etc/ssh/sshd_config
 
 ss -4ntpl
@@ -156,10 +157,9 @@ ct state new ip saddr . tcp dport @allowed_ips counter name cnt_ssh accept
 
 typeof ip saddr . tcp dport
 
-elements = { 172.27.97.2 . 22, 172.27.97.2 . 8080, 
-
-             172.27.97.3 . 22, 172.27.97.3 . 8080 }
+elements = { 172.27.97.2 . 22, 172.27.97.2 . 8080, 172.27.97.3 . 22, 172.27.97.3 . 8080 }
 
 nft -f input.nft
 
 nft list ruleset
+```
