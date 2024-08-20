@@ -21,11 +21,12 @@ table ip filter {
 
   chain input {  
   
-    type filter hook input priority filter; policy accept;  
+  type filter hook input priority filter; policy accept;  
     
-    tcp dport 22 accept  
+  tcp dport 22 accept  
     
-    tcp dport 22 drop  
+  tcp dport 22 drop  
+
 }  
 
 }  
