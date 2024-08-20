@@ -1,4 +1,4 @@
-grep Port /etc/ssh/sshd_config
+grep Port /etc/ssh/sshd_config <br>
 ss -4ntpl
 nc -w1 -vz 172.27.97.1 22
 nc -w1 -vz 172.27.97.1 8080
